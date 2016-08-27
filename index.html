@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+
+    <title>Abhishek Chowdhary</title>
+  </head>
+  <body>
+
+   <header>
+      <div class="logo"></div>
+     <nav>
+       <ul>
+         <li><a href="#about">About</a></li>
+         <li><a href="#work">Portfolio</a></li>
+         <li><a href="#design">Design</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+       <a href="mailto:abhishekchowdhary1994@gmail.com">✉email</a>
+     </nav>
+    <div class="mobile-toggle" id="mob-tg">
+      <span id="span"></span>
+    </div>
+    <div class="mobile-nav" id="mob-nv">
+     <ul>
+       <li><a href="#about">About</a></li>
+       <li><a href="#work">Portfolio</a></li>
+       <li><a href="#design">Design</a></li>
+       <li><a href="#contact">Contact</a></li>
+     </ul>
+    </div>
+   </header>
+
+<!--- About Me--->
+
+ <div class="parallax-top">
+   <div class="name">
+    <h1>hi i'am abhishek chowdhary</h1>
+   </div>
+ </div>
+
+ <div class="about">
+   <p>
+   I am young enthusiastic web developer , who is obessed with making things on web to make people happy.
+   Passionate about learning new things everyday.
+  </p>
+
+  <div class="loveto">
+    <img src="images/coding.svg" alt="Love Coding" title="Love Coding"/>
+    <img src="images/youtube.svg" alt="Watch Youtube" title="Watch Youtube"/>
+    <img src="images/movies.svg" alt="Watch Movies" title="Watch Movies"/>
+    <img src="images/game.svg" alt="Play Games" title="Play Games"/>
+    <img src="images/music.svg" alt="Listen Music" title="Listen Music" />
+    <img src="images/flash.svg" alt="Watch Flash" title="Watch Flash" />
+  </div>
+</div>
+
+<!--- Portfolio--->
+
+ <div class="portfolio">
+
+  <h1>Portfolio</h1>
+
+  <h3 id="skills">Skills</h3>
+
+  <div class="loading">
+    Html<div class="loader1"><span>95%</span></div><br>
+    Css<div class="loader2" ><span>85%</span></div><br>
+    Javascript<div class="loader3" ><span>75%</span></div><br>
+    Responsive Design<div class="loader4" ><span>80%</span></div><br>
+    Bootstrap<div class="loader5" ><span>60%</span></div><br>
+    Scss<div class="loader6" ><span>40%</span></div><br>
+    Java<div class="loader7" ><span>50%</span></div><br>
+    C++<div class="loader8" ><span>50%</span></div><br>
+  </div>
+
+  <h3 id="work">Work</h3>
+
+ <div class="loadings">
+   Coming Soon
+ </div>
+ </div>
+
+<!--- Design--->
+ <div class="design" >
+ <h1>Design</h1>
+ </div>
+
+
+<!---Contact--->
+<div class="parallax-bottom">
+    <div class="contact-name">
+      <h3><a href="mailto:abhishekchowdhary1994@gmail.com">Hire Me</a>
+      </h3>
+    </div>
+</div>
+
+<!--Social--->
+
+<div class="social" >
+   <a href="https://www.instagram.com/andromobs5/"><img src="images/instagram.svg" alt="instagram"></a>
+   <a href="https://in.linkedin.com/in/abhishek-chowdhary-a44b55ba
+"><img src="images/linkedin.svg" alt="linkedin"></a>
+    <span>© 2016. All Rights Reversed</span>
+</div>
+
+<!--Scripts -->
+
+<script type="text/javascript" src="javascripts/jquery-3.1.0.js">
+</script>
+  <script type="text/javascript">
+  $(function() {
+     $('#mob-tg').click(function(){
+        $('#mob-nv').toggle();
+     });
+     $('#skills').click(function(){
+        $('.loading').fadeIn(500);
+     });
+     $('#work').click(function(){
+        $('.loadings').fadeIn(500);
+     });
+  });
+  </script>
+  </body>
+</html>

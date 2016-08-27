@@ -382,7 +382,7 @@ header {
       margin-left: 5px; }
 
   .parallax-top {
-    height: 100vh;
+    height: 500px;
     width: 100%;
     color: white;
     background-image: url("../images/header.jpg");

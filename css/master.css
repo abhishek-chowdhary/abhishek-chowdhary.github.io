@@ -76,7 +76,7 @@ header {
       text-align: center; }
 
 .parallax-top {
-  height: 100vh;
+  height: 500px;
   width: 100%;
   color: white;
   background-image: url("../images/header.jpg");
@@ -86,7 +86,7 @@ header {
   background-attachment: fixed; }
 
 .parallax-bottom {
-  height: 60vh;
+  height: 600px;
   width: 100%;
   color: white;
   background-image: url("../images/header.jpg");

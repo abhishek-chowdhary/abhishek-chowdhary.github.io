@@ -353,7 +353,9 @@ header {
     margin-left: 0;
     text-align: center;
     padding: 2px;
-    font-size: 6vmin; }
+    font-size: 6vmin;
+    min-height:500px;
+     }
 
   .loveto {
     display: block;
@@ -371,7 +373,9 @@ header {
     margin: 0; }
 
   .contact-name {
-    margin: 0; }
+    margin: 0; 
+    min-height:400px;
+    }
     .contact-name h3 {
       font-size: 7.4vmin; }
 

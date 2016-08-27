@@ -1,0 +1,382 @@
+@import "https://fonts.googleapis.com/css?family=Lora";
+@import "https://fonts.googleapis.com/css?family=Raleway";
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  overflow-x: hidden; }
+
+header {
+  width: 135px;
+  background: white;
+  padding: 30px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  min-height: 100vh;
+  position: fixed;
+  top: 30;
+  bottom: 30;
+  font-size: 3vmin; }
+  header .logo {
+    background-image: url("../images/bg.gif");
+    background-position: center;
+    background-size: contain;
+    height: 80px;
+    padding: 10px;
+    background-repeat: no-repeat; }
+  header ul {
+    list-style: none;
+    padding: 0 20px 0 0;
+    text-align: right;
+    margin: 30px 0; }
+    header ul li {
+      margin-bottom: 10px;
+      padding-top: 10px; }
+      header ul li a {
+        text-decoration: none;
+        color: grey; }
+      header ul li a:hover {
+        color: black; }
+  header nav > a {
+    display: block;
+    text-align: right;
+    padding: 0 20px 0 0;
+    text-decoration: none;
+    color: grey;
+    text-decoration: none;
+    color: grey; }
+  header nav > a:hover {
+    color: black; }
+  header .mobile-toggle {
+    display: none;
+    width: 45px;
+    height: 50px;
+    align-items: center; }
+    header .mobile-toggle span, header .mobile-toggle span::before, header .mobile-toggle span::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: #333;
+      position: relative;
+      transition: all 0.3s linear; }
+    header .mobile-toggle span::before {
+      top: 10px; }
+    header .mobile-toggle span::after {
+      top: -10px; }
+  header .mobile-nav {
+    display: none;
+    position: absolute;
+    background: white;
+    margin-top: 120px;
+    width: 100%; }
+    header .mobile-nav ul {
+      text-align: center; }
+
+.parallax-top {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-image: url("../images/header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.parallax-bottom {
+  height: 60vh;
+  width: 100%;
+  color: white;
+  background-image: url("../images/bottom.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.name {
+  display: flex;
+  min-height: 100vh;
+  margin-left: 130px;
+  font-family: 'Raleway';
+  font-size: 9vmin;
+  text-align: center;
+  letter-spacing: 3.5vmin;
+  background: rgba(4, 0, 0, 0.5); }
+  .name h1 {
+    margin: 0 auto;
+    margin-top: 100px; }
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 65vh;
+  margin-left: 130px;
+  padding: 20px;
+  background: #df2029; }
+  .about p {
+    font-size: 6vmin;
+    font-family: cursive;
+    color: rgba(255, 255, 255, 0.8);
+    width: 50%; }
+  .about .loveto {
+    display: inline;
+    background: white;
+    height: 60vh;
+    padding: 5px;
+    width: 40%;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
+    .about .loveto img {
+      height: 17vh;
+      padding: 5px;
+      width: 46%; }
+    .about .loveto img:hover {
+      background: white;
+      animation: abhi 2s linear;
+      -webkit-animation: abhi 2s linear;
+      -moz-animation: abhi 2s linear; }
+@-webkit-keyframes abhi {
+  0% {
+    -webkit-transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(1.2, 1.2); }
+  20% {
+    -webkit-transform: scale(1.2, 1.2); } }
+@-moz-keyframes abhi {
+  0% {
+    -moz-transform: scale(1, 1); }
+  100% {
+    -moz-transform: scale(1.2, 1.2); }
+  20% {
+    -moz-transform: scale(1.2, 1.2); } }
+@keyframes abhi {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(1.2, 1.2); }
+  20% {
+    transform: scale(1.2, 1.2); } }
+.portfolio {
+  display: block;
+  min-height: 70vh;
+  margin-left: 130px;
+  padding: 20px;
+  background: #e4f1fe; }
+  .portfolio h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 10vmin;
+    font-family: 'Raleway';
+    color: rbga(0, 0, 0, 0.5);
+    letter-spacing: 2vmin; }
+  .portfolio h3 {
+    text-align: center;
+    padding: inherit;
+    font-size: 5vmin;
+    font-family: 'Raleway';
+    background: white;
+    width: 100px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
+  .portfolio .loading, .portfolio .loadings {
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: inherit;
+    background: white;
+    min-height: 50vh;
+    font-size: 3.5vmin;
+    font-family: 'Raleway';
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
+  .portfolio .loader1 {
+    display: flex;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 4vh; }
+    .portfolio .loader1 span {
+      margin: 0 auto;
+      color: white;
+      font-size: 3vmin; }
+  .portfolio .loader2 {
+    display: flex;
+    width: 85%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 4vh; }
+    .portfolio .loader2 span {
+      margin: 0 auto;
+      color: white;
+      font-size: 3vmin; }
+  .portfolio .loader3 {
+    display: flex;
+    width: 75%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 4vh; }
+    .portfolio .loader3 span {
+      margin: 0 auto;
+      color: white;
+      font-size: 3vmin; }
+  .portfolio .loader4 {
+    display: flex;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 4vh; }
+    .portfolio .loader4 span {
+      margin: 0 auto;
+      color: white;
+      font-size: 3vmin; }
+  .portfolio .loader5 {
+    display: flex;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 4vh; }
+    .portfolio .loader5 span {
+      margin: 0 auto;
+      color: white;
+      font-size: 3vmin; }
+  .portfolio .loader6 {
+    display: flex;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 4vh; }
+    .portfolio .loader6 span {
+      margin: 0 auto;
+      color: white;
+      font-size: 3vmin; }
+  .portfolio .loader7 {
+    display: flex;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 4vh; }
+    .portfolio .loader7 span {
+      margin: 0 auto;
+      color: white;
+      font-size: 3vmin; }
+  .portfolio .loader8 {
+    display: flex;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    height: 4vh; }
+    .portfolio .loader8 span {
+      margin: 0 auto;
+      color: white;
+      font-size: 3vmin; }
+
+.design {
+  display: block;
+  min-height: 70vh;
+  margin-left: 130px;
+  padding: 20px;
+  background: #3b5999; }
+  .design h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 10vmin;
+    font-family: 'Raleway';
+    color: rbga(0, 0, 0, 0.5);
+    letter-spacing: 2vmin; }
+
+.contact-name {
+  display: flex;
+  min-height: 60vh;
+  margin-left: 130px;
+  font-family: 'Raleway';
+  text-align: center;
+  letter-spacing: 3vmin;
+  background: rgba(0, 0, 0, 0.1); }
+  .contact-name h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 7vmin;
+    font-family: 'Raleway';
+    background: white;
+    width: 50%;
+    height: 10vh;
+    color: black;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 100px; }
+    .contact-name h3 a {
+      text-decoration: none;
+      color: black; }
+  .contact-name h3:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
+
+.social {
+  display: block;
+  min-height: 15vh;
+  margin-left: 130px;
+  padding: 20px;
+  background: rgba(59, 89, 153, 0.1); }
+  .social img {
+    height: 12vh;
+    margin-left: 50px; }
+  .social span {
+    font-family: 'Raleway';
+    font-size: 3vmin;
+    float: right;
+    margin-top: 50px; }
+
+@media only screen and (max-width: 765px) {
+  header {
+    position: relative;
+    min-height: 1vh;
+    width: auto;
+    padding: 20px 0;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    flex-direction: row;
+    align-items: center;
+    font-size: 4.7vmin; }
+    header .logo {
+      height: 20px;
+      width: 15%; }
+    header nav {
+      display: none; }
+    header .mobile-toggle {
+      display: flex; }
+
+  .about {
+    margin-left: 0; }
+    .about p {
+      font-size: 6vmin;
+      font-family: cursive;
+      color: rgba(255, 255, 255, 0.8); }
+
+  .name {
+    margin-left: 0;
+    text-align: center;
+    padding: 2px;
+    font-size: 6vmin; }
+
+  .loveto {
+    display: block;
+    margin: auto;
+    text-align: center;
+    min-height: 70vh; }
+    .loveto img {
+      height: 8vh !important;
+      margin-top: 2px; }
+
+  .portfolio {
+    margin: 0; }
+
+  .design {
+    margin: 0; }
+
+  .contact-name {
+    margin: 0; }
+    .contact-name h3 {
+      font-size: 7.4vmin; }
+
+  .social {
+    margin: 0; }
+    .social img {
+      height: 8vh;
+      margin-left: 5px; } }
+
+/*# sourceMappingURL=master.css.map */

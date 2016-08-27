@@ -391,7 +391,7 @@ header {
     background-repeat: no-repeat; }
 
   .parallax-bottom {
-    height: 60vh;
+    height: 400px;
     width: 100%;
     color: white;
     background-image: url("../images/bottom.jpg");

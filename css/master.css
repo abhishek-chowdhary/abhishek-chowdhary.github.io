@@ -285,7 +285,7 @@ header {
   font-family: 'Raleway';
   text-align: center;
   letter-spacing: 3vmin;
-  background: rgb(0, 0, 0); }
+  background: rgba(0, 0, 0,0.1); }
   .contact-name h3 {
     text-align: center;
     padding: 10px;

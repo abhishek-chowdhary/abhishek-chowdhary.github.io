@@ -7,7 +7,7 @@ body {
   overflow-x: hidden; }
 
 header {
-  width: 135px;
+  width: 20vh;
   background: white;
   padding: 30px 0;
   margin: 0;
@@ -20,7 +20,7 @@ header {
   bottom: 30;
   font-size: 3vmin; }
   header .logo {
-    background-image: url("../images/logo.jpg");
+    background-image: url("../images/logo.svg");
     background-position: center;
     background-size: contain;
     height: 12vh;
@@ -83,36 +83,77 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  /*
+    &::before{
+      content: ' ';
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      background-color: white;
+      background: url('../images/header.jpg') no-repeat center center;
+      background-size: cover;
+      will-change:transform;
+      z-index: -2;
+    }
+    */ }
 
 .parallax-bottom {
-  height: 100vh;
+  height: 60vh;
   width: 100%;
   color: white;
   background-image: url("../images/header.jpg");
-  background-position: center;
+  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  /*
+  &::before{
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: white;
+    background: url('../images/bottom.jpg') no-repeat center center;
+    background-size: cover;
+    will-change:transform;
+    z-index: -1;
+
+  }
+ */ }
 
 .name {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  margin-left: 130px;
+  margin-left: 5vh;
   font-family: 'Raleway';
-  font-size: 9vmin;
+  font-size: 8vmin;
   text-align: center;
   letter-spacing: 3.2vmin;
-  background: rgba(4, 0, 0, 0.2); }
+  background: rgba(4, 0, 0, 0.25); }
+  .name figcaption {
+    font-size: 3vmin;
+    letter-spacing: 1vmin; }
   .name h1 {
     margin: 0 auto;
-    margin-top: 100px; }
+    margin-top: 50px; }
+  .name img {
+    height: 20vh;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50%;
+    padding: 2vh; }
 
 .about {
   display: flex;
   flex-wrap: wrap;
   min-height: 65vh;
-  margin-left: 130px;
+  margin-left: 20vh;
   padding: 20px;
   background: #df2029; }
   .about p {
@@ -160,9 +201,12 @@ header {
 .portfolio {
   display: block;
   min-height: 70vh;
-  margin-left: 130px;
+  margin-left: 20vh;
   padding: 20px;
-  background: #e4f1fe; }
+  background-image: url("../images/bottom1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
   .portfolio h1 {
     text-align: center;
     margin: 0 auto;
@@ -171,13 +215,14 @@ header {
     color: rbga(0, 0, 0, 0.5);
     letter-spacing: 2vmin; }
   .portfolio h3 {
+    padding: 3vh;
     text-align: center;
-    padding: inherit;
     font-size: 5vmin;
     font-family: 'Raleway';
     background: white;
-    width: 100px;
+    width: 10%;
     cursor: pointer;
+    padding-left: 5px;
     margin: 0 auto;
     margin-top: 50px;
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
@@ -185,15 +230,14 @@ header {
     display: none;
     width: 60%;
     margin: 0 auto;
-    padding: inherit;
-    background: white;
+    padding: 5vh;
     min-height: 50vh;
     font-size: 3.5vmin;
     font-family: 'Raleway';
-    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
+    font-weight: bolder; }
   .portfolio .loader1 {
     display: flex;
-    width: 95%;
+    width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
     .portfolio .loader1 span {
@@ -202,7 +246,7 @@ header {
       font-size: 3vmin; }
   .portfolio .loader2 {
     display: flex;
-    width: 85%;
+    width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
     .portfolio .loader2 span {
@@ -211,7 +255,7 @@ header {
       font-size: 3vmin; }
   .portfolio .loader3 {
     display: flex;
-    width: 75%;
+    width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
     .portfolio .loader3 span {
@@ -220,7 +264,7 @@ header {
       font-size: 3vmin; }
   .portfolio .loader4 {
     display: flex;
-    width: 80%;
+    width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
     .portfolio .loader4 span {
@@ -229,7 +273,7 @@ header {
       font-size: 3vmin; }
   .portfolio .loader5 {
     display: flex;
-    width: 60%;
+    width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
     .portfolio .loader5 span {
@@ -238,7 +282,7 @@ header {
       font-size: 3vmin; }
   .portfolio .loader6 {
     display: flex;
-    width: 40%;
+    width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
     .portfolio .loader6 span {
@@ -247,7 +291,7 @@ header {
       font-size: 3vmin; }
   .portfolio .loader7 {
     display: flex;
-    width: 50%;
+    width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
     .portfolio .loader7 span {
@@ -256,7 +300,7 @@ header {
       font-size: 3vmin; }
   .portfolio .loader8 {
     display: flex;
-    width: 50%;
+    width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
     .portfolio .loader8 span {
@@ -267,7 +311,7 @@ header {
 .design {
   display: block;
   min-height: 70vh;
-  margin-left: 130px;
+  margin-left: 20vh;
   padding: 20px;
   background: #3b5999; }
   .design h1 {
@@ -281,11 +325,11 @@ header {
 .contact-name {
   display: flex;
   min-height: 60vh;
-  margin-left: 130px;
+  margin-left: 20vh;
   font-family: 'Raleway';
   text-align: center;
   letter-spacing: 3vmin;
-  background: rgba(0, 0, 0,0.1); }
+  background: rgba(0, 0, 0, 0.1); }
   .contact-name h3 {
     text-align: center;
     padding: 10px;
@@ -308,7 +352,7 @@ header {
 .social {
   display: block;
   min-height: 15vh;
-  margin-left: 130px;
+  margin-left: 20vh;
   padding: 20px;
   background: rgba(59, 89, 153, 0.1); }
   .social img {
@@ -320,7 +364,7 @@ header {
     float: right;
     margin-top: 50px; }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 1024px) {
   header {
     position: relative;
     min-height: 1vh;
@@ -338,7 +382,7 @@ header {
       background-size: contain;
       background-position: center; }
     header nav {
-      display: none; }
+      display: block; }
     header .mobile-toggle {
       display: flex; }
 
@@ -353,9 +397,9 @@ header {
     margin-left: 0;
     text-align: center;
     padding: 2px;
-    font-size: 6vmin;
-    min-height:500px;
-     }
+    font-size: 6vmin; }
+    .name figcaption {
+      text-align: center; }
 
   .loveto {
     display: block;
@@ -373,9 +417,7 @@ header {
     margin: 0; }
 
   .contact-name {
-    margin: 0; 
-    min-height:400px;
-    }
+    margin: 0; }
     .contact-name h3 {
       font-size: 7.4vmin; }
 
@@ -386,22 +428,23 @@ header {
       margin-left: 5px; }
 
   .parallax-top {
-    height: 500px;
+    height: 100vh;
     width: 100%;
     color: white;
     background-image: url("../images/header.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
 
   .parallax-bottom {
-    height: 400px;
+    height: 60vh;
     width: 100%;
     color: white;
     background-image: url("../images/bottom.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    } }
+    background-attachment: fixed; } }
 
 /*# sourceMappingURL=master.css.map */

@@ -8,23 +8,25 @@
 
     <title>Abhishek Chowdhary</title>
   </head>
+
   <body>
 
    <header>
       <div class="logo"></div>
      <nav>
-       <ul>
-         <li><a href="#about">About</a></li>
+       <ul id="tog">
+         <li><a href="#about" id="abs">About</a></li>
          <li><a href="#work">Portfolio</a></li>
          <li><a href="#design">Design</a></li>
          <li><a href="#contact">Contact</a></li>
        </ul>
        <a href="mailto:abhishekchowdhary1994@gmail.com">✉email</a>
      </nav>
+
     <div class="mobile-toggle" id="mob-tg">
       <span id="span"></span>
     </div>
-    <div class="mobile-nav" id="mob-nv">
+    <div class="mobile-nav" >
      <ul>
        <li><a href="#about">About</a></li>
        <li><a href="#work">Portfolio</a></li>
@@ -32,15 +34,23 @@
        <li><a href="#contact">Contact</a></li>
      </ul>
     </div>
+
    </header>
 
 <!--- About Me--->
 
  <div class="parallax-top">
-   <div class="name">
-    <h1>hi i'am abhishek chowdhary</h1>
+   <div class="name" >
+       <figure>
+         <img src="images/logo.svg" alt="logo" />
+         <figcaption>Web Developer/ Web Designer/ Graphic Designer</figcaption>
+       </figure>
+
+    <h1>abhishek chowdhary</h1>
+
    </div>
  </div>
+
 
  <div class="about">
    <p>
@@ -62,27 +72,30 @@
 
  <div class="portfolio">
 
-  <h1>Portfolio</h1>
+   <h1>Portfolio</h1>
 
-  <h3 id="skills">Skills</h3>
+   <h3 id="skills">Skills</h3>
 
-  <div class="loading">
-    Html<div class="loader1"><span>95%</span></div><br>
-    Css<div class="loader2" ><span>85%</span></div><br>
-    Javascript<div class="loader3" ><span>75%</span></div><br>
-    Responsive Design<div class="loader4" ><span>80%</span></div><br>
-    Bootstrap<div class="loader5" ><span>60%</span></div><br>
-    Scss<div class="loader6" ><span>40%</span></div><br>
-    Java<div class="loader7" ><span>50%</span></div><br>
-    C++<div class="loader8" ><span>50%</span></div><br>
-  </div>
+   <div class="loading">
+     Html<div class="loader1"><span>95%</span></div><br>
+     Css<div class="loader2" ><span>85%</span></div><br>
+     Javascript<div class="loader3" ><span>75%</span></div><br>
+     Responsive Design<div class="loader4" ><span>80%</span></div><br>
+     Bootstrap<div class="loader5" ><span>60%</span></div><br>
+     Scss<div class="loader6" ><span>40%</span></div><br>
+     Java<div class="loader7" ><span>50%</span></div><br>
+     C++<div class="loader8" ><span>50%</span></div><br>
+   </div>
 
-  <h3 id="work">Work</h3>
+   <h3 id="work">Work</h3>
 
- <div class="loadings">
-   Coming Soon
+    <div class="loadings">
+      Coming Soon
+    </div>
+
  </div>
- </div>
+
+
 
 <!--- Design--->
  <div class="design" >
@@ -92,15 +105,16 @@
 
 <!---Contact--->
 <div class="parallax-bottom">
-    <div class="contact-name">
-      <h3><a href="mailto:abhishekchowdhary1994@gmail.com">Hire Me</a>
-      </h3>
-    </div>
+  <div class="contact-name">
+    <h3><a href="mailto:abhishekchowdhary1994@gmail.com">Hire Me</a>
+    </h3>
+  </div>
+
 </div>
 
 <!--Social--->
 
-<div class="social" >
+<div class="social">
    <a href="https://www.instagram.com/andromobs5/"><img src="images/instagram.svg" alt="instagram"></a>
    <a href="https://in.linkedin.com/in/abhishek-chowdhary-a44b55ba"><img src="images/linked.svg" alt="instagram"></a>
 
@@ -110,15 +124,25 @@
 <!--Scripts -->
 
 <script type="text/javascript" src="javascripts/jquery-3.1.0.js">
+
 </script>
   <script type="text/javascript">
   $(function() {
      $('#mob-tg').click(function(){
-        $('#mob-nv').toggle();
+        $('#tog').toggle();
      });
      $('#skills').click(function(){
         $('.loading').fadeIn(500);
-     });
+        $('.loader1').animate({width:'95%',opacity:'1'},'slow').delay(1000);
+        $('.loader2').animate({width:'85%',opacity:'1'},'slow').delay(2000);
+        $('.loader3').animate({width:'75%',opacity:'0.9'},'slow').delay(3000);
+        $('.loader4').animate({width:'80%',opacity:'0.9'},'slow').delay(4000);
+        $('.loader5').animate({width:'60%',opacity:'0.8'},'slow').delay(5000);
+        $('.loader6').animate({width:'40%',opacity:'0.8'},'slow').delay(6000);
+        $('.loader7').animate({width:'50%',opacity:'0.7'},'slow').delay(7000);
+        $('.loader8').animate({width:'50%',opacity:'0.7'},'slow').delay(8000);
+
+      });
      $('#work').click(function(){
         $('.loadings').fadeIn(500);
      });

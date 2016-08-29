@@ -79,6 +79,7 @@ header {
   height: 100vh;
   width: 100%;
   color: white;
+  background-image: url("../images/header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -103,7 +104,7 @@ header {
   height: 60vh;
   width: 100%;
   color: white;
-  background-image: url("../images/bottom1.jpg");
+  background-image: url("../images/header.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -134,7 +135,7 @@ header {
   font-size: 8vmin;
   text-align: center;
   letter-spacing: 3.2vmin;
-  background: rgba(0, 0, 0, 0.2); }
+  background: rgba(4, 0, 0, 0.25); }
   .name figcaption {
     font-size: 3vmin;
     letter-spacing: 1vmin; }
@@ -158,7 +159,7 @@ header {
   .about p {
     font-size: 6vmin;
     font-family: 'Raleway';
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.8);
     width: 50%; }
   .about .loveto {
     display: inline;
@@ -173,14 +174,36 @@ header {
       width: 46%; }
     .about .loveto img:hover {
       background: white;
-      transform: scale(1.2); }
-
+      animation: abhi 2s linear;
+      -webkit-animation: abhi 2s linear;
+      -moz-animation: abhi 2s linear; }
+@-webkit-keyframes abhi {
+  0% {
+    -webkit-transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(1.2, 1.2); }
+  20% {
+    -webkit-transform: scale(1.2, 1.2); } }
+@-moz-keyframes abhi {
+  0% {
+    -moz-transform: scale(1, 1); }
+  100% {
+    -moz-transform: scale(1.2, 1.2); }
+  20% {
+    -moz-transform: scale(1.2, 1.2); } }
+@keyframes abhi {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(1.2, 1.2); }
+  20% {
+    transform: scale(1.2, 1.2); } }
 .portfolio {
   display: block;
   min-height: 70vh;
   margin-left: 20vh;
   padding: 20px;
-  background: rgba(228, 241, 254, 0.2);
+  background-image: url("../images/bottom1.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
@@ -298,10 +321,6 @@ header {
     color: white;
     font-family: 'Raleway';
     letter-spacing: 2vmin; }
-  .design .showcase div {
-    background-image: url("../images/header.png");
-    height: 200px;
-    width: 200px; }
 
 .contact-name {
   display: flex;
@@ -335,14 +354,10 @@ header {
   min-height: 15vh;
   margin-left: 20vh;
   padding: 20px;
-  background: white; }
+  background: rgba(59, 89, 153, 0.1); }
   .social img {
     height: 12vh;
     margin-left: 50px; }
-  .social img:hover {
-    transform: scale(1.2);
-    background: white;
-    border-radius: 50%; }
   .social span {
     font-family: 'Raleway';
     font-size: 3vmin;
@@ -365,10 +380,9 @@ header {
       width: 8vw;
       height: 8vh;
       background-size: contain;
-      background-position: center;
-      display: none; }
-    header nav ul {
-      display: none; }
+      background-position: center; }
+    header nav {
+      display: block; }
     header .mobile-toggle {
       display: flex; }
 
@@ -417,6 +431,7 @@ header {
     height: 100vh;
     width: 100%;
     color: white;
+    background-image: url("../images/header.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -426,6 +441,7 @@ header {
     height: 60vh;
     width: 100%;
     color: white;
+    background-image: url("../images/bottom.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

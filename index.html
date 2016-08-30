@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
     <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
 
     <title>Abhishek Chowdhary</title>
+    </style>
   </head>
 
   <body>
 
+
+   </video>
    <header>
       <div class="logo"></div>
      <nav>
        <ul id="tog">
-         <li><a href="#about" id="abs">About</a></li>
-         <li><a href="#work">Portfolio</a></li>
+         <li><a href="#about" >About</a></li>
+         <li><a href="#portfolio" >Portfolio</a></li>
          <li><a href="#design">Design</a></li>
          <li><a href="#contact">Contact</a></li>
        </ul>
@@ -26,33 +30,34 @@
     <div class="mobile-toggle" id="mob-tg">
       <span id="span"></span>
     </div>
-    <div class="mobile-nav" >
-     <ul>
-       <li><a href="#about">About</a></li>
-       <li><a href="#work">Portfolio</a></li>
-       <li><a href="#design">Design</a></li>
-       <li><a href="#contact">Contact</a></li>
-     </ul>
-    </div>
+
 
    </header>
 
 <!--- About Me--->
 
  <div class="parallax-top">
-   <div class="name" >
-       <figure>
-         <img src="images/logo.svg" alt="logo" />
-         <figcaption>Web Developer/ Web Designer/ Graphic Designer</figcaption>
-       </figure>
+  <!---   style="z-index:-1;position:fixed;width:100%;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);min-height:100%;min-width:100%;width:auto;height:auto;"
+   <video  poster="images/header.jpg" muted autoplay >
+     <source src="code.m4v" type="video/mp4">
+     <source src="coding4.webm" type="video/webm">
+     <source src="code.ogg" type="video/ogg">
+     </video>
+  --->
+     <div class="name" style="z-index:1;">
+         <figure>
+           <img src="images/logo.svg" alt="logo"  />
+           <figcaption>Web Developer/ Web Designer/ Graphic Designer</figcaption>
+         </figure>
 
-    <h1>abhishek chowdhary</h1>
+      <h1>abhishek chowdhary</h1>
 
-   </div>
+     </div>
+
  </div>
 
 
- <div class="about">
+ <div class="about" id="about">
    <p>
    I am young enthusiastic web developer , who is obessed with making things on web to make people happy.
    Passionate about learning new things everyday.
@@ -70,7 +75,7 @@
 
 <!--- Portfolio--->
 
- <div class="portfolio">
+ <div class="portfolio" id="portfolio">
 
    <h1>Portfolio</h1>
 
@@ -98,14 +103,17 @@
 
 
 <!--- Design--->
- <div class="design" >
+ <div class="design" id="design">
  <h1>Design</h1>
+
  </div>
 
 
 <!---Contact--->
 <div class="parallax-bottom">
-  <div class="contact-name">
+
+
+  <div class="contact-name" id="contact">
     <h3><a href="mailto:abhishekchowdhary1994@gmail.com">Hire Me</a>
     </h3>
   </div>
@@ -116,12 +124,12 @@
 
 <div class="social">
    <a href="https://www.instagram.com/andromobs5/"><img src="images/instagram.svg" alt="instagram"></a>
-   <a href="https://in.linkedin.com/in/abhishek-chowdhary-a44b55ba"><img src="images/linked.svg" alt="instagram"></a>
-
-    <span>© 2016. All Rights Reversed</span>
+   <a href="https://in.linkedin.com/in/abhishek-chowdhary-a44b55ba"><img src="images/linked.svg" alt="linkedin"></a>
+   <a href="https://github.com/abhishek-chowdhary"><img src="images/github.svg" alt="github"></a>
+    <span >© 2016. All Rights Reversed</span>
 </div>
 
-<!--Scripts -->
+<!--Scripts  style="width:100%;background:white;margin:0;padding:0;float:right" -->
 
 <script type="text/javascript" src="javascripts/jquery-3.1.0.js">
 
@@ -146,7 +154,16 @@
      $('#work').click(function(){
         $('.loadings').fadeIn(500);
      });
+
+     $('li>a').on('click',function (e) {
+       e.preventDefault();
+        $("body,html").animate({
+          scrollTop: $( $(this).attr('href') ).offset().top},600);
+     });
+
   });
+
+
   </script>
   </body>
 </html>

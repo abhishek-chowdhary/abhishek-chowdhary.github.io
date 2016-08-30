@@ -89,10 +89,10 @@ header {
   background-attachment: fixed; }
 
 .parallax-bottom {
-  height: 60vh;
+  height: 40vh;
   width: 100%;
   color: white;
-  background-image: url("../images/bottom1.jpg");
+  background-image: url("../images/header.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,10 +303,6 @@ header {
     color: white;
     font-family: 'Raleway';
     letter-spacing: 2vmin; }
-  .design .showcase div {
-    background-image: url("../images/header.png");
-    height: 200px;
-    width: 200px; }
 
 .contact-name {
   display: flex;
@@ -317,8 +313,7 @@ header {
   margin-left: 20vh;
   font-family: 'Raleway';
   text-align: center;
-  letter-spacing: 3vmin;
-  background: rgba(0, 0, 0, 0.1); }
+  letter-spacing: 3vmin; }
   .contact-name h3 {
     text-align: center;
     padding: 10px;
@@ -451,7 +446,7 @@ header {
 
   .parallax-top {
     height: 100% !important;
-    width: 100%;
+    width: 100vw;
     color: white;
     background-image: url("../images/header.jpg");
     background-position: center;

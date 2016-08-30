@@ -411,7 +411,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: scroll; }
+    background-attachment: none; }
     .portfolio h1 {
       font-size: 10vw !important;
       font-size: 2em; }
@@ -452,7 +452,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll; }
+    background-attachment: none; }
 
   .parallax-bottom {
     height: 100% !important;
@@ -462,7 +462,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll; } }
+    background-attachment: none; } }
 @media only screen and (min-width: 767px) and (max-width: 1023px) and (orientation: portrait) {
   .about p {
     font-size: 5.5vw;
@@ -568,7 +568,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll; }
+    background-attachment: none; }
 
   .parallax-bottom {
     height: 100% !important;
@@ -578,6 +578,6 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll; } }
+    background-attachment: none; } }
 
 /*# sourceMappingURL=master.css.map */

@@ -12,6 +12,9 @@ header {
   padding: 30px 0;
   margin: 0;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: column-reverse;
   justify-content: space-around;
   min-height: 100vh;
@@ -83,51 +86,23 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /*
-    &::before{
-      content: ' ';
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top:0;
-      left:0;
-      background-color: white;
-      background: url('../images/header.jpg') no-repeat center center;
-      background-size: cover;
-      will-change:transform;
-      z-index: -2;
-    }
-    */ }
+  background-attachment: fixed; }
 
 .parallax-bottom {
   height: 60vh;
   width: 100%;
   color: white;
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/bottom1.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /*
-  &::before{
-    content: ' ';
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    background-color: white;
-    background: url('../images/bottom.jpg') no-repeat center center;
-    background-size: cover;
-    will-change:transform;
-    z-index: -1;
-
-  }
- */ }
+  background-attachment: fixed; }
 
 .name {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: column;
   min-height: 100vh;
   margin-left: 5vh;
@@ -135,7 +110,7 @@ header {
   font-size: 8vmin;
   text-align: center;
   letter-spacing: 3.2vmin;
-  background: rgba(4, 0, 0, 0.25); }
+  background: rgba(0, 0, 0, 0.2); }
   .name figcaption {
     font-size: 3vmin;
     letter-spacing: 1vmin; }
@@ -151,6 +126,9 @@ header {
 
 .about {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-wrap: wrap;
   min-height: 65vh;
   margin-left: 20vh;
@@ -159,7 +137,7 @@ header {
   .about p {
     font-size: 6vmin;
     font-family: 'Raleway';
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     width: 50%; }
   .about .loveto {
     display: inline;
@@ -174,36 +152,16 @@ header {
       width: 46%; }
     .about .loveto img:hover {
       background: white;
-      animation: abhi 2s linear;
-      -webkit-animation: abhi 2s linear;
-      -moz-animation: abhi 2s linear; }
-@-webkit-keyframes abhi {
-  0% {
-    -webkit-transform: scale(1, 1); }
-  100% {
-    -webkit-transform: scale(1.2, 1.2); }
-  20% {
-    -webkit-transform: scale(1.2, 1.2); } }
-@-moz-keyframes abhi {
-  0% {
-    -moz-transform: scale(1, 1); }
-  100% {
-    -moz-transform: scale(1.2, 1.2); }
-  20% {
-    -moz-transform: scale(1.2, 1.2); } }
-@keyframes abhi {
-  0% {
-    transform: scale(1, 1); }
-  100% {
-    transform: scale(1.2, 1.2); }
-  20% {
-    transform: scale(1.2, 1.2); } }
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2); }
+
 .portfolio {
   display: block;
   min-height: 70vh;
   margin-left: 20vh;
   padding: 20px;
-  background-image: url("../images/bottom1.jpg");
+  background-image: url("../images/bottom2.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
@@ -237,6 +195,9 @@ header {
     font-weight: bolder; }
   .portfolio .loader1 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
@@ -246,6 +207,9 @@ header {
       font-size: 3vmin; }
   .portfolio .loader2 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
@@ -255,6 +219,9 @@ header {
       font-size: 3vmin; }
   .portfolio .loader3 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
@@ -264,6 +231,9 @@ header {
       font-size: 3vmin; }
   .portfolio .loader4 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
@@ -273,6 +243,9 @@ header {
       font-size: 3vmin; }
   .portfolio .loader5 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
@@ -282,6 +255,9 @@ header {
       font-size: 3vmin; }
   .portfolio .loader6 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
@@ -291,6 +267,9 @@ header {
       font-size: 3vmin; }
   .portfolio .loader7 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
@@ -300,6 +279,9 @@ header {
       font-size: 3vmin; }
   .portfolio .loader8 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     width: 0px;
     background: rgba(0, 0, 0, 0.9);
     height: 4vh; }
@@ -321,9 +303,16 @@ header {
     color: white;
     font-family: 'Raleway';
     letter-spacing: 2vmin; }
+  .design .showcase div {
+    background-image: url("../images/header.png");
+    height: 200px;
+    width: 200px; }
 
 .contact-name {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   min-height: 60vh;
   margin-left: 20vh;
   font-family: 'Raleway';
@@ -347,6 +336,8 @@ header {
       color: black; }
   .contact-name h3:hover {
     transform: scale(1.01, 1.01);
+    -webkit-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
 
 .social {
@@ -354,20 +345,26 @@ header {
   min-height: 15vh;
   margin-left: 20vh;
   padding: 20px;
-  background: rgba(59, 89, 153, 0.1); }
+  background: white; }
   .social img {
     height: 12vh;
     margin-left: 50px; }
+  .social img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    background: white;
+    border-radius: 50%; }
   .social span {
     font-family: 'Raleway';
     font-size: 3vmin;
     float: right;
     margin-top: 50px; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
   header {
     position: relative;
-    min-height: 1vh;
+    min-height: 60px;
     width: auto;
     padding: 20px 0;
     top: auto;
@@ -375,43 +372,60 @@ header {
     left: auto;
     flex-direction: row;
     align-items: center;
-    font-size: 4.7vmin; }
+    font-size: 1.5em;
+    font-size: 5vw; }
     header .logo {
-      width: 8vw;
-      height: 8vh;
-      background-size: contain;
-      background-position: center; }
-    header nav {
-      display: block; }
+      display: none; }
+    header nav ul {
+      display: none; }
     header .mobile-toggle {
-      display: flex; }
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex; }
 
   .about {
     margin-left: 0; }
     .about p {
-      font-size: 6vmin;
-      font-family: 'Raleway';
-      color: rgba(255, 255, 255, 0.8); }
+      font-size: 6vw;
+      font-family: 'Raleway',sans-serif,serif;
+      color: rgba(255, 255, 255, 0.9); }
 
   .name {
     margin-left: 0;
     text-align: center;
     padding: 2px;
-    font-size: 6vmin; }
+    font-size: 6vw; }
     .name figcaption {
-      text-align: center; }
+      text-align: center;
+      font-size: 2.5vw; }
 
   .loveto {
     display: block;
     margin: auto;
     text-align: center;
-    min-height: 70vh; }
+    min-height: 100%; }
     .loveto img {
-      height: 8vh !important;
-      margin-top: 2px; }
+      height: 12% !important; }
 
   .portfolio {
-    margin: 0; }
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bottom1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .portfolio h1 {
+      font-size: 10vw !important;
+      font-size: 2em; }
+    .portfolio h3 {
+      font-size: 5.5vw !important;
+      width: 20%;
+      text-align: center; }
+    .portfolio .loading, .portfolio .loadings {
+      width: 80% !important;
+      font-size: 4vw; }
 
   .design {
     margin: 0; }
@@ -419,32 +433,150 @@ header {
   .contact-name {
     margin: 0; }
     .contact-name h3 {
-      font-size: 7.4vmin; }
+      font-size: 8vw !important;
+      width: 60% !important;
+      padding: 5px;
+      height: 50%; }
 
   .social {
-    margin: 0; }
+    margin: 0;
+    padding: 20px; }
     .social img {
-      height: 8vh;
-      margin-left: 5px; }
+      height: 50px;
+      margin-left: 1px; }
+    .social span {
+      font-size: 2.8vw;
+      padding-left: 2px !important; }
 
   .parallax-top {
-    height: 100vh;
+    height: 100% !important;
     width: 100%;
     color: white;
     background-image: url("../images/header.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
+    background-repeat: no-repeat; }
 
   .parallax-bottom {
-    height: 60vh;
+    height: 100% !important;
     width: 100%;
     color: white;
-    background-image: url("../images/bottom.jpg");
+    background-image: url("../images/header.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat; } }
+@media only screen and (min-width: 767px) and (max-width: 1023px) and (orientation: portrait) {
+  .about p {
+    font-size: 5.5vw;
+    margin-left: 30px; }
+
+  .social img {
+    margin-left: 20px; }
+  .social span {
+    margin-right: 40px; } }
+@media only screen and (max-width: 1025px) and (orientation: landscape) {
+  header {
+    position: relative;
+    min-height: 60px;
+    width: auto;
+    padding: 20px 0;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5em;
+    font-size: 5vw; }
+    header .logo {
+      display: none; }
+    header nav ul {
+      display: none; }
+    header .mobile-toggle {
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex; }
+
+  .about {
+    margin-left: 0;
+    width: 100%; }
+    .about p {
+      width: 100%;
+      font-size: 6vw;
+      font-family: 'Raleway',sans-serif,serif;
+      color: rgba(255, 255, 255, 0.9); }
+    .about .loveto {
+      display: block;
+      width: 60%;
+      text-align: center;
+      min-height: 100%;
+      margin: 0 auto; }
+      .about .loveto img {
+        height: 25% !important; }
+
+  .name {
+    margin-left: 0;
+    text-align: center;
+    padding: 2px;
+    font-size: 6vw; }
+    .name figcaption {
+      text-align: center;
+      font-size: 2.5vw; }
+
+  .portfolio {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bottom1.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed; } }
+    background-position: center;
+    background-size: cover; }
+    .portfolio h1 {
+      font-size: 10vw !important;
+      font-size: 2em; }
+    .portfolio h3 {
+      font-size: 5.5vw !important;
+      width: 20%;
+      text-align: center; }
+    .portfolio .loading, .portfolio .loadings {
+      width: 80% !important;
+      font-size: 4vw; }
+
+  .design {
+    margin: 0; }
+
+  .contact-name {
+    margin: 0; }
+    .contact-name h3 {
+      font-size: 8vw !important;
+      width: 60% !important;
+      padding: 5px;
+      height: 50%; }
+
+  .social {
+    margin: 0; }
+    .social img {
+      height: 50px;
+      margin-left: 1px; }
+    .social span {
+      font-size: 2.8vw; }
+
+  .parallax-top {
+    height: 100% !important;
+    width: 100%;
+    color: white;
+    background-image: url("../images/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+  .parallax-bottom {
+    height: 100% !important;
+    width: 100%;
+    color: white;
+    background-image: url("../images/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; } }
 
 /*# sourceMappingURL=master.css.map */

@@ -390,7 +390,14 @@ header {
     margin-left: 0;
     text-align: center;
     padding: 2px;
-    font-size: 6vw; }
+    font-size: 6vw;
+    width: auto;
+    background: url("../images/headermob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .name img {
+      height: 50px; }
     .name figcaption {
       text-align: center;
       font-size: 2.5vw; }
@@ -405,13 +412,9 @@ header {
 
   .portfolio {
     margin: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
-    background: grey;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: none; }
+    background: #1abc9c; }
     .portfolio h1 {
       font-size: 10vw !important;
       font-size: 2em; }
@@ -427,6 +430,9 @@ header {
     margin: 0; }
 
   .contact-name {
+    background: url("../images/header.jpg");
+    background-position: center;
+    background-size: cover;
     margin: 0; }
     .contact-name h3 {
       font-size: 8vw !important;
@@ -446,23 +452,13 @@ header {
 
   .parallax-top {
     height: 100% !important;
-    width: 100vw;
-    color: white;
-    background: grey;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: none; }
+    width: auto !important;
+    color: white; }
 
   .parallax-bottom {
     height: 100% !important;
-    width: 100%;
-    color: white;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: none;
-    background: grey; } }
+    width: auto;
+    color: white; } }
 @media only screen and (min-width: 767px) and (max-width: 1023px) and (orientation: portrait) {
   .about p {
     font-size: 5.5vw;
@@ -471,8 +467,35 @@ header {
   .social img {
     margin-left: 20px; }
   .social span {
-    margin-right: 40px; } }
+    margin-right: 40px; }
+
+  .name {
+    background: url("../images/headermob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+  .contact-name {
+    background: url("../images/header.jpg");
+    background-position: center;
+    background-size: cover; }
+
+  .parallax-top {
+    height: 100% !important;
+    width: auto !important;
+    color: white; }
+
+  .parallax-bottom {
+    height: 100% !important;
+    width: auto;
+    color: white; }
+
+  .portfolio {
+    background: #1abc9c; } }
 @media only screen and (max-width: 1025px) and (orientation: landscape) {
+  body {
+    overflow-x: hidden; }
+
   header {
     position: relative;
     min-height: 60px;
@@ -515,8 +538,13 @@ header {
   .name {
     margin-left: 0;
     text-align: center;
+    width: auto !important;
     padding: 2px;
-    font-size: 6vw; }
+    font-size: 6vw;
+    background: url("../images/headermob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
     .name figcaption {
       text-align: center;
       font-size: 2.5vw; }
@@ -525,11 +553,7 @@ header {
     margin: 0;
     width: 100%;
     height: 100%;
-    background: grey;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll; }
+    background: #1abc9c; }
     .portfolio h1 {
       font-size: 10vw !important;
       font-size: 2em; }
@@ -545,7 +569,11 @@ header {
     margin: 0; }
 
   .contact-name {
-    margin: 0; }
+    margin: 0;
+    width: auto;
+    background: url("../images/header.jpg");
+    background-position: center;
+    background-size: cover; }
     .contact-name h3 {
       font-size: 8vw !important;
       width: 60% !important;
@@ -562,22 +590,13 @@ header {
 
   .parallax-top {
     height: 100% !important;
-    width: 100%;
+    width: auto !important;
     color: white;
-    background: grey;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: none; }
+    background: white; }
 
   .parallax-bottom {
     height: 100% !important;
     width: 100%;
-    color: white;
-    background: grey;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: none; } }
+    background: white; } }
 
 /*# sourceMappingURL=master.css.map */

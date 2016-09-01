@@ -82,17 +82,16 @@ header {
   height: 100vh;
   width: 100%;
   color: white;
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/one2.gif");
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y repeat-y;
   background-attachment: fixed; }
 
 .parallax-bottom {
   height: 40vh;
   width: 100%;
   color: white;
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/port.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -110,13 +109,15 @@ header {
   font-size: 8vmin;
   text-align: center;
   letter-spacing: 3.2vmin;
-  background: rgba(0, 0, 0, 0.2); }
+  background: rgba(0, 0, 0, 0.7); }
   .name figcaption {
     font-size: 3vmin;
     letter-spacing: 1vmin; }
   .name h1 {
     margin: 0 auto;
-    margin-top: 50px; }
+    margin-top: 50px;
+    font: 'Raleway', Arial, Helvetica, sans-serif;
+    color: white; }
   .name img {
     height: 20vh;
     margin: 0 auto;
@@ -161,7 +162,7 @@ header {
   min-height: 70vh;
   margin-left: 20vh;
   padding: 20px;
-  background-image: url("../images/bottom2.jpg");
+  background-image: url("../images/port.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
@@ -392,10 +393,7 @@ header {
     padding: 2px;
     font-size: 6vw;
     width: auto;
-    background: url("../images/headermob.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
+    background: rgba(0, 0, 0, 0.7); }
     .name img {
       height: 50px; }
     .name figcaption {
@@ -414,7 +412,7 @@ header {
     margin: 0;
     width: auto;
     height: 100%;
-    background: #1abc9c; }
+    background: #448AFF; }
     .portfolio h1 {
       font-size: 10vw !important;
       font-size: 2em; }
@@ -430,9 +428,7 @@ header {
     margin: 0; }
 
   .contact-name {
-    background: url("../images/header.jpg");
-    background-position: center;
-    background-size: cover;
+    background: #2ecc71;
     margin: 0; }
     .contact-name h3 {
       font-size: 8vw !important;
@@ -470,17 +466,17 @@ header {
     margin-right: 40px; }
 
   .name {
-    background: url("../images/headermob.jpg");
+    min-height: 80vh;
+    background: rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
 
   .contact-name {
-    background: url("../images/header.jpg");
-    background-position: center;
-    background-size: cover; }
+    background: #1abc9c; }
 
   .parallax-top {
+    background: url("../images/one2.gif");
     height: 100% !important;
     width: auto !important;
     color: white; }
@@ -491,7 +487,7 @@ header {
     color: white; }
 
   .portfolio {
-    background: #1abc9c; } }
+    background: #448AFF; } }
 @media only screen and (max-width: 1025px) and (orientation: landscape) {
   body {
     overflow-x: hidden; }
@@ -541,10 +537,7 @@ header {
     width: auto !important;
     padding: 2px;
     font-size: 6vw;
-    background: url("../images/headermob.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
+    background: rgba(0, 0, 0, 0.7); }
     .name figcaption {
       text-align: center;
       font-size: 2.5vw; }
@@ -553,7 +546,7 @@ header {
     margin: 0;
     width: 100%;
     height: 100%;
-    background: #1abc9c; }
+    background: #448AFF; }
     .portfolio h1 {
       font-size: 10vw !important;
       font-size: 2em; }
@@ -571,9 +564,7 @@ header {
   .contact-name {
     margin: 0;
     width: auto;
-    background: url("../images/header.jpg");
-    background-position: center;
-    background-size: cover; }
+    background: #1abc9c; }
     .contact-name h3 {
       font-size: 8vw !important;
       width: 60% !important;
@@ -592,7 +583,9 @@ header {
     height: 100% !important;
     width: auto !important;
     color: white;
-    background: white; }
+    background: url("../images/one2.gif");
+    background-position: center;
+    background-repeat: repeat; }
 
   .parallax-bottom {
     height: 100% !important;

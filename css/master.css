@@ -1,610 +1,95 @@
-@import "https://fonts.googleapis.com/css?family=Lora";
-@import "https://fonts.googleapis.com/css?family=Raleway";
-body {
-  margin: 0;
+body, html {
   padding: 0;
-  background: #eee;
-  overflow-x: hidden; }
+  margin: 0; }
 
-header {
-  width: 20vh;
+.navbar {
+  padding: 20px;
   background: white;
-  padding: 30px 0;
-  margin: 0;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  min-height: 100vh;
-  position: fixed;
-  top: 30;
-  bottom: 30;
-  font-size: 3vmin; }
-  header .logo {
-    background-image: url("../images/logo.svg");
-    background-position: center;
-    background-size: contain;
-    height: 12vh;
-    padding: 10px;
-    background-repeat: no-repeat; }
-  header ul {
-    list-style: none;
-    padding: 0 20px 0 0;
-    text-align: right;
-    margin: 30px 0; }
-    header ul li {
-      margin-bottom: 10px;
-      padding-top: 10px; }
-      header ul li a {
-        text-decoration: none;
-        color: grey; }
-      header ul li a:hover {
-        color: black; }
-  header nav > a {
-    display: block;
-    text-align: right;
-    padding: 0 20px 0 0;
-    text-decoration: none;
-    color: grey;
-    text-decoration: none;
-    color: grey; }
-  header nav > a:hover {
-    color: black; }
-  header .mobile-toggle {
-    display: none;
-    width: 45px;
-    height: 50px;
-    align-items: center; }
-    header .mobile-toggle span, header .mobile-toggle span::before, header .mobile-toggle span::after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 100%;
-      background: #333;
-      position: relative;
-      transition: all 0.3s linear; }
-    header .mobile-toggle span::before {
-      top: 10px; }
-    header .mobile-toggle span::after {
-      top: -10px; }
-  header .mobile-nav {
-    display: none;
-    position: absolute;
-    background: white;
-    margin-top: 120px;
-    width: 100%; }
-    header .mobile-nav ul {
-      text-align: center; }
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Raleway', sans-serif; }
+  .navbar .navbar-brand {
+    border: 2px solid black;
+    border-radius: 2.5%; }
+  .navbar .navbar-brand:hover {
+    background: black;
+    color: white; }
+  .navbar #mynav a:hover {
+    background: black;
+    color: white; }
 
-.parallax-top {
-  height: 100vh;
-  width: 100%;
-  color: white;
-  background-image: url("../images/one2.gif");
+.heads {
+  margin-top: 3%;
+  padding: 210px;
+  background: url("https://static.pexels.com/photos/29608/pexels-photo-29608-large.jpg");
   background-position: center;
-  background-repeat: repeat-y repeat-y;
-  background-attachment: fixed; }
-
-.parallax-bottom {
-  height: 40vh;
-  width: 100%;
-  color: white;
-  background-image: url("../images/port.png");
-  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  box-shadow: 0 1000px rgba(0, 0, 0, 0.5) inset;
+  margin-bottom: 0px; }
+  .heads h1 {
+    color: white;
+    border: 2px solid white;
+    border-radius: 1%;
+    padding: 5%; }
 
-.name {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin-left: 5vh;
-  font-family: 'Raleway';
-  font-size: 8vmin;
-  text-align: center;
-  letter-spacing: 3.2vmin;
-  background: rgba(1, 0, 0, 0.3); }
-  .name figcaption {
-    font-size: 3vmin;
-    letter-spacing: 1vmin; }
-  .name h1 {
-    margin: 0 auto;
-    margin-top: 50px;
-    font: 'Raleway', Arial, Helvetica, sans-serif;
+.down {
+  background: #34495e;
+  color: white;
+  margin-bottom: 0px; }
+  .down a {
+    border: 2px solid white;
+    list-style-type: none;
+    border-radius: 50px;
+    padding: 20px;
     color: white; }
-  .name img {
-    height: 20vh;
-    margin: 0 auto;
+  .down a:hover {
     background: white;
-    border-radius: 50%;
-    padding: 2vh; }
+    border: 2px solid #34495e;
+    color: #34495e; }
+
+.connect {
+  background: white;
+  border: 2px solid white;
+  border-radius: 5px; }
 
 .about {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  min-height: 65vh;
-  margin-left: 20vh;
-  padding: 20px;
-  background: #df2029; }
-  .about p {
-    font-size: 6vmin;
-    font-family: 'Raleway';
-    color: rgba(255, 255, 255, 0.9);
-    width: 50%; }
-  .about .loveto {
-    display: inline;
-    background: white;
-    height: 60vh;
-    padding: 5px;
-    width: 40%;
-    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
-    .about .loveto img {
-      height: 17vh;
-      padding: 5px;
-      width: 46%; }
-    .about .loveto img:hover {
-      background: white;
-      transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2); }
+  background: #13d0a8;
+  margin-bottom: 0;
+  color: white; }
 
-.portfolio {
-  display: block;
-  min-height: 70vh;
-  margin-left: 20vh;
-  padding: 20px;
-  background-image: url("../images/port.png");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
-  .portfolio h1 {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 10vmin;
-    font-family: 'Raleway';
-    color: rbga(0, 0, 0, 0.5);
-    letter-spacing: 2vmin; }
-  .portfolio h3 {
-    padding: 3vh;
-    text-align: center;
-    font-size: 5vmin;
-    font-family: 'Raleway';
+.work {
+  margin-bottom: 0;
+  color: white;
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #EB3349, #F45C43);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #EB3349, #F45C43);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .work h2 {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
     background: white;
-    width: 10%;
-    cursor: pointer;
-    padding-left: 5px;
-    margin: 0 auto;
-    margin-top: 50px;
-    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
-  .portfolio .loading, .portfolio .loadings {
-    display: none;
-    width: 60%;
-    margin: 0 auto;
-    padding: 5vh;
-    min-height: 50vh;
-    font-size: 3.5vmin;
-    font-family: 'Raleway';
-    font-weight: bolder; }
-  .portfolio .loader1 {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 4vh; }
-    .portfolio .loader1 span {
-      margin: 0 auto;
-      color: white;
-      font-size: 3vmin; }
-  .portfolio .loader2 {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 4vh; }
-    .portfolio .loader2 span {
-      margin: 0 auto;
-      color: white;
-      font-size: 3vmin; }
-  .portfolio .loader3 {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 4vh; }
-    .portfolio .loader3 span {
-      margin: 0 auto;
-      color: white;
-      font-size: 3vmin; }
-  .portfolio .loader4 {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 4vh; }
-    .portfolio .loader4 span {
-      margin: 0 auto;
-      color: white;
-      font-size: 3vmin; }
-  .portfolio .loader5 {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 4vh; }
-    .portfolio .loader5 span {
-      margin: 0 auto;
-      color: white;
-      font-size: 3vmin; }
-  .portfolio .loader6 {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 4vh; }
-    .portfolio .loader6 span {
-      margin: 0 auto;
-      color: white;
-      font-size: 3vmin; }
-  .portfolio .loader7 {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 4vh; }
-    .portfolio .loader7 span {
-      margin: 0 auto;
-      color: white;
-      font-size: 3vmin; }
-  .portfolio .loader8 {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    width: 0px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 4vh; }
-    .portfolio .loader8 span {
-      margin: 0 auto;
-      color: white;
-      font-size: 3vmin; }
+    color: #EB3349; }
 
 .design {
-  display: block;
-  min-height: 70vh;
-  margin-left: 20vh;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-  background: rgba(29, 34, 71, 0.9); }
-  .design div {
-    width: 80%;
-    margin: 0px 5% 0px 5%; }
-    .design div h1 {
-      font-size: 10vmin;
-      margin: 0 auto;
-      color: white;
-      font-family: 'Raleway';
-      letter-spacing: 2vmin;
-      margin-bottom: 2vh; }
-    .design div img {
-      width: 20%; }
-    .design div figcaption a {
-      font-size: 3vmin;
-      text-decoration: none;
-      background: white;
-      padding: 10px;
-      font-family: 'Raleway';
-      border-radius: 2%;
-      box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
-
-.contact-name {
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  min-height: 60vh;
-  margin-left: 20vh;
-  font-family: 'Raleway';
-  text-align: center;
-  letter-spacing: 3vmin; }
-  .contact-name h3 {
-    text-align: center;
-    padding: 10px;
-    font-size: 7vmin;
-    font-family: 'Raleway';
-    background: white;
-    width: 50%;
-    height: 10vh;
+  margin-bottom: 0;
+  color: white;
+  background: url("../images/des.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 5000px rgba(0, 0, 0, 0.5) inset; }
+  .design a {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 50px;
+    list-style-type: none;
     color: black;
-    cursor: pointer;
-    margin: 0 auto;
-    margin-top: 100px; }
-    .contact-name h3 a {
-      text-decoration: none;
-      color: black; }
-  .contact-name h3:hover {
-    transform: scale(1.01, 1.01);
-    -webkit-transform: scale(1.01, 1.01);
-    -ms-transform: scale(1.01, 1.01);
-    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.4); }
-
-.social {
-  display: block;
-  min-height: 15vh;
-  margin-left: 20vh;
-  padding: 20px;
-  background: white; }
-  .social img {
-    height: 12vh;
-    margin-left: 50px; }
-  .social img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    background: white;
-    border-radius: 50%; }
-  .social span {
-    font-family: 'Raleway';
-    font-size: 3vmin;
-    float: right;
-    margin-top: 50px; }
-
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
-  header {
-    position: relative;
-    min-height: 60px;
-    width: auto;
-    padding: 20px 0;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.5em;
-    font-size: 5vw; }
-    header .logo {
-      display: none; }
-    header nav ul {
-      display: none; }
-    header .mobile-toggle {
-      display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex; }
-
-  .about {
-    margin-left: 0; }
-    .about p {
-      font-size: 6vw;
-      font-family: 'Raleway',sans-serif,serif;
-      color: rgba(255, 255, 255, 0.9); }
-
-  .name {
-    margin-left: 0;
-    text-align: center;
-    padding: 2px;
-    font-size: 6vw;
-    width: auto;
-    background: rgba(0, 0, 0, 0.7); }
-    .name img {
-      height: 50px; }
-    .name figcaption {
-      text-align: center;
-      font-size: 2.5vw; }
-
-  .loveto {
-    display: block;
-    margin: auto;
-    text-align: center;
-    min-height: 100%; }
-    .loveto img {
-      height: 12% !important; }
-
-  .portfolio {
-    margin: 0;
-    width: auto;
-    height: 100%;
-    background: #448AFF; }
-    .portfolio h1 {
-      font-size: 10vw !important;
-      font-size: 2em; }
-    .portfolio h3 {
-      font-size: 5.5vw !important;
-      width: 20%;
-      text-align: center; }
-    .portfolio .loading, .portfolio .loadings {
-      width: 80% !important;
-      font-size: 4vw; }
-
-  .design {
-    margin: 0; }
-
-  .contact-name {
-    background: #2ecc71;
-    margin: 0; }
-    .contact-name h3 {
-      font-size: 8vw !important;
-      width: 60% !important;
-      padding: 5px;
-      height: 50%; }
-
-  .social {
-    margin: 0;
-    padding: 20px; }
-    .social img {
-      height: 50px;
-      margin-left: 1px; }
-    .social span {
-      font-size: 2.8vw;
-      padding-left: 2px !important; }
-
-  .parallax-top {
-    height: 100% !important;
-    width: auto !important;
+    background: white; }
+  .design a:hover {
+    background: black;
     color: white; }
-
-  .parallax-bottom {
-    height: 100% !important;
-    width: auto;
-    color: white; } }
-@media only screen and (min-width: 767px) and (max-width: 1023px) and (orientation: portrait) {
-  .about p {
-    font-size: 5.5vw;
-    margin-left: 30px; }
-
-  .social img {
-    margin-left: 20px; }
-  .social span {
-    margin-right: 40px; }
-
-  .name {
-    min-height: 80vh;
-    background: rgba(0, 0, 0, 0.7);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-
-  .contact-name {
-    background: #1abc9c; }
-
-  .parallax-top {
-    background: url("../images/one2.gif");
-    height: 100% !important;
-    width: auto !important;
-    color: white; }
-
-  .parallax-bottom {
-    height: 100% !important;
-    width: auto;
-    color: white; }
-
-  .portfolio {
-    background: #448AFF; } }
-@media only screen and (max-width: 1025px) and (orientation: landscape) {
-  body {
-    overflow-x: hidden; }
-
-  header {
-    position: relative;
-    min-height: 60px;
-    width: auto;
-    padding: 20px 0;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.5em;
-    font-size: 5vw; }
-    header .logo {
-      display: none; }
-    header nav ul {
-      display: none; }
-    header .mobile-toggle {
-      display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex; }
-
-  .about {
-    margin-left: 0;
-    width: 100%; }
-    .about p {
-      width: 100%;
-      font-size: 6vw;
-      font-family: 'Raleway',sans-serif,serif;
-      color: rgba(255, 255, 255, 0.9); }
-    .about .loveto {
-      display: block;
-      width: 60%;
-      text-align: center;
-      min-height: 100%;
-      margin: 0 auto; }
-      .about .loveto img {
-        height: 25% !important; }
-
-  .name {
-    margin-left: 0;
-    text-align: center;
-    width: auto !important;
-    padding: 2px;
-    font-size: 6vw;
-    background: rgba(0, 0, 0, 0.7); }
-    .name figcaption {
-      text-align: center;
-      font-size: 2.5vw; }
-
-  .portfolio {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background: #448AFF; }
-    .portfolio h1 {
-      font-size: 10vw !important;
-      font-size: 2em; }
-    .portfolio h3 {
-      font-size: 5.5vw !important;
-      width: 20%;
-      text-align: center; }
-    .portfolio .loading, .portfolio .loadings {
-      width: 80% !important;
-      font-size: 4vw; }
-
-  .design {
-    margin: 0; }
-
-  .contact-name {
-    margin: 0;
-    width: auto;
-    background: #1abc9c; }
-    .contact-name h3 {
-      font-size: 8vw !important;
-      width: 60% !important;
-      padding: 5px;
-      height: 50%; }
-
-  .social {
-    margin: 0; }
-    .social img {
-      height: 50px;
-      margin-left: 1px; }
-    .social span {
-      font-size: 2.8vw; }
-
-  .parallax-top {
-    height: 100% !important;
-    width: auto !important;
-    color: white;
-    background: url("../images/one2.gif");
-    background-position: center;
-    background-repeat: repeat; }
-
-  .parallax-bottom {
-    height: 100% !important;
-    width: 100%;
-    background: white; } }
 
 /*# sourceMappingURL=master.css.map */

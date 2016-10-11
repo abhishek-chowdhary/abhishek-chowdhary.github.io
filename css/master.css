@@ -4,10 +4,14 @@ body, html {
   overflow-x: hidden; }
 
 .navbar {
-  padding: 20px;
+  padding: 10px;
   background: white;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  margin: 0; }
+  .navbar button {
+    box-shadow: 0 1000px black inset;
+    border-radius: 2px; }
   .navbar .navbar-brand {
     border: 2px solid black;
     border-radius: 2.5%; }
@@ -19,19 +23,20 @@ body, html {
     color: white; }
 
 .heads {
-  margin-top: 3%;
-  padding: 210px;
   background: url("https://static.pexels.com/photos/29608/pexels-photo-29608-large.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 1000px rgba(0, 0, 0, 0.5) inset;
-  margin-bottom: 0px; }
+  margin: 0px;
+  height: 400px;
+  padding: 20px; }
   .heads h1 {
     color: white;
     border: 2px solid white;
-    border-radius: 1%;
-    padding: 5%; }
+    border-radius: 5px;
+    letter-spacing: 10px;
+    padding: 50px; }
 
 .down {
   background: #34495e;
